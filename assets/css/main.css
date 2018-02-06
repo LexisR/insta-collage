@@ -1,0 +1,82 @@
+
+body{
+  margin: 0;
+}
+
+.row .col{
+  padding: 0;
+}
+
+#modal1 {
+  color: #fff;
+}
+
+#sectionPrincipal {
+  background: linear-gradient(#8EAC65, #C07A4F);
+}
+
+#title {
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  text-align: center;
+}
+
+.input-field {
+  background-color: #A4A174;
+  border:  solid 1px #A4A174;
+  opacity: #A4A174 3.5;
+  color: #fff;
+}
+
+
+#btnLogin {
+  background-color: #AB9058;
+  color: #fff;
+  filter: alpha(opacity=40);
+  text-align: center;
+  border: solid 1px #A4A174;
+  height: 30px;
+  
+}
+
+#idiomas {
+  text-align: center;
+}
+
+#helpSection {
+  color: #fff;
+  text-align: center;
+}
+
+#linea {
+  color: #fff;
+  width: 5em;
+  border: 3px;
+  height: 1px;
+}
+
+.partOfLinea {
+  color: #fff;
+  text-align: center;
+}
+
+.facebook {
+  color: #fff;
+  text-align: center;
+  font-family: 'Francois One', sans-serif;
+}
+
+#lastPart {
+  border: #fff;
+  color: #ffff;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#registro {
+  color: #fff;
+}
+
+label {
+display: inline;
+}

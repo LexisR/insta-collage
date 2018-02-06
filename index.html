@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Francois+One|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  
+  <!-- Seccion para ingresar-->
+  <section id="sectionPrincipal" class="hide-on-large-only">
+    <div class="row">
+      <div class="input-field col s8 offset-s2 white-text" id="idiomas">
+        <select class="icons">
+          <option value="" disabled selected class="center-align">Selecciona un idioma</option>
+          <option value="" data-icon="assets/img/español.jpg" class="left circle">Español</option>
+          <option value="" data-icon="assets/img/ingles.jpg" class="left circle">Ingles</option>
+          <option value="" data-icon="assets/img/aleman.jpg" class="left circle">Alemán</option>
+          <option value="" data-icon="assets/img/portugues.jpg" class="left circle">Portugues</option>
+          <option value="" data-icon="assets/img/koreano.jpg" class="left circle">Coreano</option>
+          <option value="" data-icon="assets/img/mandarin.jpg" class="left circle">Mandarin</option>
+          <option value="" data-icon="assets/img/ruso.jpg" class="left circle">Ruso</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <h2 id="title">Instagram</h2>
+      </div>
+    </div>   
+    <div class="row">
+      <div class="input-field col s8 offset-s2">
+        <input id="txtEmail" type="tel" class="validate white-text">
+        <label for="txtEmail">Correo electrónico</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s8 offset-s2">
+        <input id="txtPassword" type="password" class="validate white-text">
+        <label for="txtPassword">contraseña</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s8 offset-s4">
+        <button class="btn" id="btnLogin">Iniciar sesión </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="s8 offset-s2" id="helpSection">
+      <p>¿Has olvidado tu información de inicio de sesión ?
+        <a href="">Obten ayuda</a>
+      </p>
+    </div>
+    <div id="linea"></div>
+    <div class="partOfLinea">o</div>
+    <div class="linea"></div>
+    <div class="facebook">Iniciar sesión con Facebook</div>
+    <div id="lastPart">
+      <p>¿No tienes una cuenat registrate?
+        <a href="#!" class="modal-action  waves-effect waves-green" id="registro">Regístrate</a>
+      </p>
+    </div>
+  </div>
+  </section>
+  <!-- Modal Registro -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">mail</i>
+              <input id="txtEmail" type="tel" class="validate black-text">
+              <label for="txtEmail">mail</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">create</i>
+              <input id="txtPassword" type="password" class="validate black-text">
+              <label for="txtPassword">contraseña</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnSignUp">Registrarme</a>
+    </div>
+  </div>
+  <section id="sectionCollage">
+    <button class="btn" id="btnVolver">volver</button>
+    <button class="btn" id="btnSalir">salir</button>
+    hola
+  </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>

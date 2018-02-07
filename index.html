@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
   <!-- Seccion para ingresar-->
-  <section id="sectionPrincipal" class="hide-on-large-only">
+  <section id="sectionPrincipal">
     <div class="row">
       <div class="input-field col s8 offset-s2 white-text" id="idiomas">
         <select class="icons">
@@ -31,43 +32,43 @@
       </div>
     </div>
     <div class="row">
-      <div class="col s12">
+      <div class="col s12 l12">
         <h2 id="title">Instagram</h2>
       </div>
-    </div>   
+    </div>
     <div class="row">
-      <div class="input-field col s8 offset-s2">
+      <div class="input-field col s8  offset-s2">
         <input id="txtEmail" type="tel" class="validate white-text">
-        <label for="txtEmail">Correo electrónico</label>
+        <label for="txtEmail"></label>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s8 offset-s2">
         <input id="txtPassword" type="password" class="validate white-text">
-        <label for="txtPassword">contraseña</label>
+        <label for="txtPassword"></label>
       </div>
     </div>
     <div class="row">
-      <div class="col s8 offset-s4">
+      <div class="col s6 l8 offset-s4 offset-l">
         <button class="btn" id="btnLogin">Iniciar sesión </button>
       </div>
     </div>
     <div class="row">
       <div class="s8 offset-s2" id="helpSection">
-      <p>¿Has olvidado tu información de inicio de sesión ?
-        <a href="">Obten ayuda</a>
-      </p>
+        <p>¿Has olvidado tu información de inicio de sesión ?
+          <a href="">Obten ayuda</a>
+        </p>
+      </div>
+      <div id="linea"></div>
+      <div class="partOfLinea">o</div>
+      <div class="linea"></div>
+      <div class="facebook">Iniciar sesión con Facebook</div>
+      <div id="lastPart">
+        <p>¿No tienes una cuenta registrate?
+          <a href="#!" class="modal-action  waves-effect waves-green" id="registro">Regístrate</a>
+        </p>
+      </div>
     </div>
-    <div id="linea"></div>
-    <div class="partOfLinea">o</div>
-    <div class="linea"></div>
-    <div class="facebook">Iniciar sesión con Facebook</div>
-    <div id="lastPart">
-      <p>¿No tienes una cuenat registrate?
-        <a href="#!" class="modal-action  waves-effect waves-green" id="registro">Regístrate</a>
-      </p>
-    </div>
-  </div>
   </section>
   <!-- Modal Registro -->
   <div id="modal1" class="modal">
@@ -93,10 +94,109 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="btnSignUp">Registrarme</a>
     </div>
   </div>
+  <!-- Seccion de collage -->
   <section id="sectionCollage">
-    <button class="btn" id="btnVolver">volver</button>
-    <button class="btn" id="btnSalir">salir</button>
-    hola
+    <div class="row nav">
+      <div class="col s6 l6">
+        <h4>The best experience on Collage</h4>
+      </div>
+      <div class="col s6 l6">
+        <button class="btn btns" id="btnVolver">Return</button>
+        <button class="btn btns" id="btnSalir">Get out</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6 l6">
+        <div class="row">
+          <div class="col s6 l16">
+            <div class="space1" ondragover="permitirDrop(event)" ondrop="drop(event)"> </div>
+          </div>
+          <div class="col s6 l16">
+            <div class="space1" ondragover="permitirDrop(event)" ondrop="drop(event)"> </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 l6">
+            <div class="space1" ondragover="permitirDrop(event)" ondrop="drop(event)"> </div>
+          </div>
+          <div class="col s6 l6">
+            <div class="space1" ondragover="permitirDrop(event)" ondrop="drop(event)"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 l6">
+        <h5 id="changai">3 reasons why Shanghai is the world's greatest city</h5>
+        <p>
+          1. Direct to your door Everything delivers in Shanghai, and we're not just talking Chinese food. Even the woman pushing around
+          the metal cart full of fresh flowers will give you her cell phone number. Airline tickets ... groceries ... that
+          heavy potted plant you bought at the market -- all of it can magically appear at your door, often much faster than
+          expected.
+          <br> 2. Fabulous cabaret After a night at the cabaret? The Pearl in Shanghai is a must-visit -- it is a historic theater
+          turned nightlife hotspot.
+          <br> 3. Convenience store ladies There's nothing like stopping by the local convenience store for a late-night ice
+          cream (or one last bottle of Qingdao) and a hard time from the shopkeepers.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l2" id="icon">
+        <div class="row">
+          <div class="col s6 l6 right-align">
+            <i class="medium material-icons" id="filter"> filter_center_focus</i>
+          </div>
+          <div class="col s6 l6 left-align">
+            <h3 id="collageCity">Collage City</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto1" draggable="true" ondragstart="drag(event)" src="assets/img/thai1.jpg">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto2" draggable="true" ondragstart="drag(event)" src="assets/img/thai2.jpg">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto3" draggable="true" ondragstart="drag(event)" src="assets/img/thai3.jpg" alt="">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto4" draggable="true" ondragstart="drag(event)" src="assets/img/thai4.jpg" alt="">
+      </div>
+      <div class="col s6 l12 recientes">
+        <!--A TODAS LAS IMAGENES QUE QUERRAMOS MOVER, LE DAREMOS EL ATRIBUTO DRAGGABLE="TRUE", QUE NOS PERMITE QUE ESE ELEMENTO SEA ARRASTRABLE-->
+        <!--TAMBIEN EL EVENTO ONDRAGSTART QUE OCURRE CUANDO EL USUARIO COMMIENZA A ARRASTRAR UN ELEMENTO-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto5" draggable="true" ondragstart="drag(event)" src="assets/img/thai5.jpg">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto6" draggable="true" ondragstart="drag(event)" src="assets/img/thai6.jpg" alt="">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto7" draggable="true" ondragstart="drag(event)" src="assets/img/thai7.jpg" alt="">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto8" draggable="true" ondragstart="drag(event)" src="assets/img/thai8.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto9" draggable="true" ondragstart="drag(event)" src="assets/img/thai9.jpg">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto10" draggable="true" ondragstart="drag(event)" src="assets/img/thai10.jpg" alt="">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto11" draggable="true" ondragstart="drag(event)" src="assets/img/thai11.jpg" alt="">
+      </div>
+      <div class="col s3 l3">
+        <img claas="responsive-img" id="foto12" draggable="true" ondragstart="drag(event)" src="assets/img/thai12.jpg" alt="">
+      </div>
+    </div>
   </section>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="assets/js/materialize.min.js"></script>

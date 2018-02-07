@@ -12,6 +12,7 @@
             
 
 // Initialize Firebase
+
 (function (){ //iife una expresion de funcion invocada inmediatamente (function)
   const config = {
     apiKey: "AIzaSyA7aYT6Sp-a_eONFTt6MjXRUuGgww8W5Is",
@@ -29,7 +30,6 @@ const txtPassword = document.getElementById('txtPassword');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
 const btnSalir = document.getElementById('btnSalir');
-const hacerUnEnvio = document.getElementById('hacerUnEnvio');
 const btnVolver = document.getElementById('btnVolver');
 
 //agregando evento al btnLogin
@@ -43,28 +43,20 @@ btnLogin.addEventListener('click', e => {
   promise.catch( e => console.log(e.menssage));
 });
 
-/*
-hacerUnEnvio.addEventListener('click', e => {
-    $('#thirdSection').show();
-    $('#second').hide();
-});
-*/
-
 btnVolver.addEventListener('click', e => {
   $('#sectionCollage').hide();
   $('#sectionPrincipal').show();
 });
 
 //pasos para poder afiliarte con correo y contraseña
-btnSignUp.addEventListener('click', e => {   
-  //pasos para obtener correo y c ontraseña
+btnSignUp.addEventListener('click', e => {  
   const email = txtEmail.value;
   const pass = txtPassword.value;
   const auth = firebase.auth();
   //para ingresar 
   const promise = auth.createUserWithEmailAndPassword(email, pass);
-  promise//utilizamos promise para que nos termine haga una accion .then
-    .catch( e => alert(e.message)); //e variable se puuede llamar como quiera
+  promise//utilizamos promise para que cuando termine nos haga una accion .then
+  .catch( e => alert(e.message)); //e variable se puuede llamar como quiera
 });
 
 //funcion para activar el boton de salir
@@ -89,3 +81,18 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
 }());
 
 
+//Funciones para arrastrar las fotos
+
+function drag(ev) {
+  ev.dataTransfer.setData('text', ev.target.id);
+}
+
+function permitirDrop(ev){
+  ev.preventDefault();
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var id_foto = ev.dataTransfer.getData('text');
+  ev.target.appendChild(document.getElementById(id_foto));
+}

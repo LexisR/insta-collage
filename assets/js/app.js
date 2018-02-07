@@ -27,9 +27,12 @@
 
 const txtEmail = document.getElementById('txtEmail');
 const txtPassword = document.getElementById('txtPassword');
+const txtEmail2 = document.getElementById('txtEmail2');
+const txtPassword2 = document.getElementById('txtPassword2');
 const btnLogin = document.getElementById('btnLogin');
 const btnSignUp = document.getElementById('btnSignUp');
 const btnSalir = document.getElementById('btnSalir');
+const hacerUnEnvio = document.getElementById('hacerUnEnvio');
 const btnVolver = document.getElementById('btnVolver');
 
 //agregando evento al btnLogin
@@ -49,14 +52,14 @@ btnVolver.addEventListener('click', e => {
 });
 
 //pasos para poder afiliarte con correo y contraseña
-btnSignUp.addEventListener('click', e => {  
-  const email = txtEmail.value;
-  const pass = txtPassword.value;
+btnSignUp.addEventListener('click', e => {   
+  const email = txtEmail2.value;
+  const pass = txtPassword2.value;
   const auth = firebase.auth();
   //para ingresar 
   const promise = auth.createUserWithEmailAndPassword(email, pass);
-  promise//utilizamos promise para que cuando termine nos haga una accion .then
-  .catch( e => alert(e.message)); //e variable se puuede llamar como quiera
+  promise//utilizamos promise para que nos termine haga una accion .then
+    .catch( e => alert(e.message)); //e variable se puuede llamar como quiera
 });
 
 //funcion para activar el boton de salir

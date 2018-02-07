@@ -148,7 +148,11 @@ h4 {
 }
 
 #changai {
-  font-family:  'Francois One', sans-serif;
+  font-family:  'Lobster', cursive;
   color: #000;
   text-align: center;
+}
+
+#changai p {
+  font-family: 'Lobster', cursive;
 }

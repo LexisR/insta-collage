@@ -55,7 +55,7 @@ body{
   filter: alpha(opacity=40);
   text-align: center;
   border: solid 1px #A4A174;
-  
+  width: 12em;
 }
 
 #idiomas {
